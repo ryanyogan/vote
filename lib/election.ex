@@ -19,7 +19,7 @@ defmodule Election do
     |> view()
     |> IO.write()
 
-    command = IO.gets(">")
+    command = IO.gets("> ")
 
     election
     |> update(command)
