@@ -62,9 +62,7 @@ defmodule Election do
 
   def update(election, ["a" <> _ | args]) do
     name = Enum.join(args, " ")
-    new_candidate = Candidate.new(election.next_id, name)
-
-    candidates = [new_candidate | election.candidates]
+    candidates = [Candidate.new(election.next_id, name) | election.candidates]
 
     %{election | candidates: candidates, next_id: election.next_id + 1}
   end
