@@ -1,6 +1,7 @@
 # Vote
 
-**TODO: Add description**
+This is a simple module to be used for the CLI portion of Voting, this
+module connects to a process manager (Supervisor).
 
 ## Installation
 
@@ -18,4 +19,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/vote](https://hexdocs.pm/vote).
-
