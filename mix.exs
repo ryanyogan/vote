@@ -7,7 +7,18 @@ defmodule Vote.MixProject do
       version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      name: "Vote",
+      source_url: "https://github.com/ryanyogan/vote",
+      docs: [
+        extras: ["README.md"]
+      ],
+      description: "A small voting application",
+      organization: "yogan.dev",
+      package: [
+        licenses: ["MIT"],
+        links: %{github: "https://github.com/ryanyogan/vote"}
+      ]
     ]
   end
 
@@ -18,6 +29,8 @@ defmodule Vote.MixProject do
   end
 
   defp deps do
-    []
+    [
+      {:ex_doc, "~> 0.22", only: :dev, runtime: false}
+    ]
   end
 end
